@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Weather Visualization</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Weather Visualization</h1>
+
+        <div id="intro">
+            <h2>White Hat</h2>
+            <p>
+                The data set is greenhouse emissions for countires. We used this style of visualization to emphasize the change in co2 emissions for ALL countries across the globe. (more gov regulation and science = less co2). The visualization doesn’t have misleading labels and doesn’t have skewed axis.
+                We filtered by the two years, to made sure that the same countries were present in both years (some countries for example will have data for 2014 but not 2022) to not skew the data and create bias.
+                When you hover over the dots you can see all of the exact countries and obs values.</h2>
+            
+                <div class='tableauPlaceholder' id='viz1743466161696' style='position: relative'><noscript><a href='#'><img alt='Greenhouse Emissions for COuntries' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A3&#47;A3WhiteHat_17434661442920&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'
+                style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='A3WhiteHat_17434661442920&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A3&#47;A3WhiteHat_17434661442920&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+                <script type='text/javascript'>
+                var divElement = document.getElementById('viz1743466161696');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*.75)+'px';
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
+            </p>
+        <h2>Black Hat</h2>
+        <p>
+                In the black hat visualization, we used various deceptive techniques, such as truncating the Y-axis, manipulating colors, filtering data, using misleading labels, and varying bar widths.
+                The Y-axis starts at a value higher than zero, exaggerating the differences between bars. This compels the viewer to perceive the differences as much larger than they actually are.
+                Since we are displaying the number of COVID-19 cases, the tallest bars are red to draw the viewer’s attention, reinforcing the idea that these cases were severe. The color red is often associated with danger and urgency, making the data appear more critical than it might actually be. Meanwhile, the smaller bars are green, a color commonly linked to safety and positivity, subtly suggesting that these lower case numbers were within an acceptable range or not a cause for concern.
+                Only specific years and countries were chosen to mislead the viewer into focusing solely on selected continents and how they were affected over time.
+                Misleading labels were strategically used to reinforce the intended narrative and guide the viewer’s perception in a specific direction.
+            <div class='tableauPlaceholder' id='viz1743798880045' style='position: relative'><noscript><a href='#'><img alt='COVID-19 CASES ACROSS NORTH AMERICA and EUROPE ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A3&#47;A3_17437144490020&#47;A3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' 
+                style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='A3_17437144490020&#47;A3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;A3&#47;A3_17437144490020&#47;A3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+        
+                <script type='text/javascript'> 
+                    var divElement = document.getElementById('viz1743798880045'); 
+                    var vizElement = divElement.getElementsByTagName('object')[0]; 
+                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px'; 
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js'; 
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement); 
+                </script>
+
+
+            <h2>Development Process</h2>
+            <p>
+                Our group had 3 members. Two of the group members were in incharge of graphs, one for the white hat and the other for the black hat in Tableau, which took about <b>4-5 hours.</b>
+                The other group member helped with doing the write-up on the webpage and recording the demo video, which took <b>2 hours.</b>  The part of the application that took the most time developing was for the Black Hat visualization. 
+                Trying to find ways to make the data bias with misleading labels and axis was challenging at first, as it required deciding the type of graph and how to display the data. Once we made a visualization that had misleading axes and bias filtering, we still ended up with a major issue as the data came out 4 pages long. 
+                It took a while, but we were able to limit the data to one page and use colors such as red to our advantage as a way to skew the viewer's perception.
+                
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
